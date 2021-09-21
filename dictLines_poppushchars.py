@@ -19,6 +19,6 @@ for line in Lines:
         
         split_string = wordninja.split(string_to_test)
 
-        if len(split_string ) < 12:
+        if len(split_string ) < 11:
             print ("line: " + str(count) + "shift: " + str(x) + " split: ")
             print (split_string)
