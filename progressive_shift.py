@@ -13,12 +13,17 @@ def shift(plain_text, multiplier):
 file1 = open('decodedLines3.txt', 'r')
 
 Lines = file1.readlines()
-
-count = 0
+l = 1
 # Strips the newline character
 for line in Lines:
-    postive_shift_text = shift(line, 1)
-    negative_shift_text = shift(line, -1)
-
-    print("{}".format(postive_shift_text))
-    print("{}".format(negative_shift_text))
+    k1 = postive_shift_text = shift(line, 1)
+    k2 = negative_shift_text = shift(line, -1)
+    if len(wordninja.split(k1)) <= 12:
+        print('pos')
+        print(l)
+        print(wordninja.split(k1))
+    if len(wordninja.split(k2)) <= 12:
+        print('neg')
+        print(l)
+        print(wordninja.split(k2))
+    l += 1
